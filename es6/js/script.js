@@ -38,7 +38,7 @@ console.log(
     return result;
   }
 
-  var listaSquadre = [
+  let listaSquadre = [
     {
       nome: 'Lazio',
       punti : randomNumber(0, 20),

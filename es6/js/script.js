@@ -41,28 +41,32 @@ console.log(
   let listaSquadre = [
     {
       nome: 'Lazio',
-      punti : randomNumber(0, 20),
-      falli : randomNumber(0, 20),
+      punti : 0,
+      falli : 0,
     },
     {
       nome: 'Roma',
-      punti : randomNumber(0, 20),
-      falli : randomNumber(0, 20),
+      punti : 0,
+      falli : 0,
     },
     {
       nome: 'Genoa',
-      punti : randomNumber(0, 20),
-      falli : randomNumber(0, 20),
+      punti : 0,
+      falli : 0,
     },
     {
       'nome': 'Atalanta',
-      punti : randomNumber(0, 20),
-      falli : randomNumber(0, 20),
+      punti : 0,
+      falli : 0,
     },
   ];
 
-
+  let newListaSquadre = [];
   for (var i = 0; i < listaSquadre.length; i++) {
-   let {nome,falli} = listaSquadre;
+    let thisTeam = listaSquadre[i];
+    thisTeam.falli = randomNumber(0, 20);
+    thisTeam.punti = randomNumber(0, 20);
+    let {nome,falli} = listaSquadre;
+    newListaSquadre.push(listaSquadre[i].nome,listaSquadre[i].falli)
   }
-  console.log(listaSquadre);
+  console.log(newListaSquadre);

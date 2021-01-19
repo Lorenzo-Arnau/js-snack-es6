@@ -66,7 +66,7 @@ console.log(
     let thisTeam = listaSquadre[i];
     thisTeam.falli = randomNumber(0, 20);
     thisTeam.punti = randomNumber(0, 20);
-    let {nome,falli} = listaSquadre;
-    newListaSquadre.push(listaSquadre[i].nome,listaSquadre[i].falli)
+    let {nome,falli} = listaSquadre[i];
+    newListaSquadre.push({nome,falli})
   }
   console.log(newListaSquadre);

@@ -64,6 +64,6 @@ var listaSquadre = [
 var arrayNomiPunti = [];
 for (var i = 0; i < listaSquadre.length; i++) {
   arrayNomiPunti.push(listaSquadre[i].nome);
-  arrayNomiPunti.push(listaSquadre[i].punti);
+  arrayNomiPunti.push(listaSquadre[i].falli);
 }
 console.log(arrayNomiPunti);

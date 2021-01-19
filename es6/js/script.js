@@ -37,35 +37,32 @@ console.log(
     let result = Math.floor(Math.random() * (max + 1 - min) + min);
     return result;
   }
-  let falli = randomNumber(0, 20);
-  let punti = randomNumber(0, 20);
 
   var listaSquadre = [
     {
       nome: 'Lazio',
-      punti,
-      falli,
+      punti : randomNumber(0, 20),
+      falli : randomNumber(0, 20),
     },
     {
       nome: 'Roma',
-      punti,
-      falli,
+      punti : randomNumber(0, 20),
+      falli : randomNumber(0, 20),
     },
     {
       nome: 'Genoa',
-      punti,
-      falli,
+      punti : randomNumber(0, 20),
+      falli : randomNumber(0, 20),
     },
     {
       'nome': 'Atalanta',
-      punti,
-      falli,
+      punti : randomNumber(0, 20),
+      falli : randomNumber(0, 20),
     },
   ];
 
 
   for (var i = 0; i < listaSquadre.length; i++) {
-   let arrayNomiPunti = [];
-   arrayNomiPunti.push(listaSquadre[i]{nome,falli})
+   let {nome,falli} = listaSquadre;
   }
-  console.log(arrayNomiPunti);
+  console.log(listaSquadre);

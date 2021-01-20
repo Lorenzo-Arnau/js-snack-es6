@@ -75,7 +75,7 @@ console.log(arrayNomiPunti);
 
 function mixing(indiceminimo,array,indicemassimo){
   var nuovoArray =[];
-  for (var i = indiceminimo; i < indicemassimo; i++) {
+  for (var i = indiceminimo; i <= indicemassimo; i++) {
     nuovoArray.push(array[i])
   }
   console.log(nuovoArray);

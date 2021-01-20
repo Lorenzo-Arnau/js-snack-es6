@@ -76,15 +76,22 @@ console.log(
   // jsnack 3
   // Si scriva una funzione che accetti tre argomenti, un array e due numeri (A più piccolo di B).
   // La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri
+  const min = prompt('inserisci indice minimo');
+  const max = prompt('inserisci indice massimo');
+  const arrayNumber = ['gatto','cane','topo','mimmo','pippo','pluto','senior'];
   function mixing(indiceminimo,array,indicemassimo){
-    var nuovoArray = [];
-    array.forEach((element) => {
-      if (element < indicemassimo && element > indiceminimo) {
-        nuovoArray.push(element);
-        return element;
-      }
-    });
-    console.log(nuovoArray);
-  }
-  var arrayNumber = ['gatto','cane','topo','mimmo','pippo','pluto','senior'];
-mixing(3,arrayNumber,6);
+    // --------------------VERSIONE FOREACH--------------------
+    // const nuovoArray =[];
+    // array.forEach((item,i) => {
+    //   if (i <= indicemassimo && i >= indiceminimo) {
+    //     nuovoArray.push(item)
+    //   }
+    // });
+    // --------------------VERSIONE FILTER--------------------
+    const newArray = array.filter((elemento,indice,array) => {
+      return indice <= indicemassimo && indice >= indiceminimo;
+      })
+      console.log(newArray);
+      return newArray;
+    }
+  mixing(min,arrayNumber,max);

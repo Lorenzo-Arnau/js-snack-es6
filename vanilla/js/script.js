@@ -81,5 +81,7 @@ function mixing(indiceminimo,array,indicemassimo){
   console.log(nuovoArray);
   return nuovoArray;
 }
+var min = prompt('inserisci indice minimo');
+var max = prompt('inserisci indice massimo');
 var arrayNumber = ['gatto','cane','topo','mimmo','pippo','pluto','senior'];
-mixing(3,arrayNumber,6);
+mixing(min,arrayNumber,max);

@@ -63,7 +63,7 @@ console.log(
   ];
 
   let newListaSquadre = [];
-  for (var i = 0; i < listaSquadre.length; i++) {
+  for (let i = 0; i < listaSquadre.length; i++) {
     let thisTeam = listaSquadre[i];
     thisTeam.falli = randomNumber(0, 20);
     thisTeam.punti = randomNumber(0, 20);

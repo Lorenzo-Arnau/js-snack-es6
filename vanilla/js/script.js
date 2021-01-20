@@ -73,14 +73,13 @@ console.log(arrayNomiPunti);
 // Si scriva una funzione che accetti tre argomenti, un array e due numeri (A più piccolo di B).
 // La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri
 
-function mixing(numberpicolo,array,numbergrande){
-  while (numberpicolo < (numbergrande - 1)) {
-    numberpicolo++;
-    array.push(numberpicolo);
+function mixing(indiceminimo,array,indicemassimo){
+  var nuovoArray =[];
+  for (var i = indiceminimo; i < indicemassimo; i++) {
+    nuovoArray.push(array[i])
   }
-  return array;
+  console.log(nuovoArray);
+  return nuovoArray;
 }
-var arrayNumber = [];
-
-mixing(1,arrayNumber,10);
-console.log(arrayNumber);
+var arrayNumber = ['gatto','cane','topo','mimmo','pippo','pluto','senior'];
+mixing(3,arrayNumber,6);

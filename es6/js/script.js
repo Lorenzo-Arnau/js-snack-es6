@@ -16,6 +16,7 @@ const listaBiciclette = [
     'peso': 2,
   },
 ];
+
 let biciLight = listaBiciclette[0];
 for (let i = 1; i < listaBiciclette.length; i++) {
   if (listaBiciclette[i].peso < biciLight.peso) {
@@ -70,3 +71,8 @@ console.log(
     newListaSquadre.push({nome,falli})
   }
   console.log(newListaSquadre);
+
+
+  // jsnack 3
+  // Si scriva una funzione che accetti tre argomenti, un array e due numeri (A più piccolo di B).
+  // La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri
